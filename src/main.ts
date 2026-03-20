@@ -8,7 +8,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.use(cookieParser());
   app.enableCors({
-    origin: ['http://localhost:4200', 'http://localhost:4300'],
+    origin: ['https://prompt-hub-frontend-kmni81y11-ubongo2000s-projects.vercel.app/'],
     credentials: true,
   });
   app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
